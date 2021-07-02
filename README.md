@@ -40,7 +40,7 @@ so far, we've got something like this
 
 ### element array
 every element in the array is an object with these required parameters:
- - type (string) - this must be either `text`, `image`, or `gif`
+ - type (string) - this must be either ```text```, `image`, or `gif`
  - x (number) - this is the x coordinate of the place where you would like to place the element
  - y (number) - this is the y coordinate of the place where you would like to place the element
  (note, the coordinate system is like the ones you learned in math class, so )
