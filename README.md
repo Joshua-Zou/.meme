@@ -45,3 +45,6 @@ every element in the array is an object with these required parameters:
  - y (number) - this is the y coordinate of the place where you would like to place the element
  (note, the coordinate system is like the ones you learned in math class, so )
  <img src="https://sites.google.com/site/gruendingmath6/_/rsrc/1468743449298/unit-1---patterns-and-equations/1-5---plotting-points-on-a-coordinate-grid/first%20quadrant%20grid.gif">
+ - position (optional string) - the default is `bottom left` and tells the render which corner of the element to use as a reference when positioning with the X, Y coordinates 
+ valid options are `top left`, `top right`, `bottom left`, `bottom right`, and `center`
+ - z_index (optional string) - this lets you force elements to appear ontop or below each otehr see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) for more details
