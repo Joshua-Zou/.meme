@@ -70,7 +70,7 @@ every element in the array is an object with these required parameters:
    ]
   }
  ```
- <small>The coordinate system</small>
+ <small>The coordinate system</small><br>
   <img src="https://sites.google.com/site/gruendingmath6/_/rsrc/1468743449298/unit-1---patterns-and-equations/1-5---plotting-points-on-a-coordinate-grid/first%20quadrant%20grid.gif">
   <br>
 
