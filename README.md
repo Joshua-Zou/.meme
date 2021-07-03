@@ -91,3 +91,18 @@ every element in the array is an object with these required parameters:
    - color (optional) - default is black, and this parameter changes the color of the text
    - text_align (optional) - default is `center`, and allows you to change where the text is aligned. Other options are `left` and `right`
    - overflow (optional) - default is `allowed`, but this parameter allows you to change if the text will get cut off or not with the option `none`
+
+## Meme Image Syntax
+   This allows you to change the background of any meme element. The three operators are:
+ - color
+ - image
+ - gif
+
+You use these like this: `color(white)` **without** quotes around the text.
+
+**color**
+You may use any valid `css` color. So `black`, `#a89090`, `rgba(235, 64, 52, 1)` are all valid and can be used like `color(rgba(235, 64, 52, 1))`
+**image**
+This only accepts valid base64 encoded images. Like before, use this without quotes around the base64 encoded image
+**gif**
+This also only accepts valid base64 encoded images. Like before, use this without quotes around the base64 encoded image
