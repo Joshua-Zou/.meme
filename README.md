@@ -68,8 +68,8 @@ every element in the array is an object with these required parameters:
       "z_index": 1
    ]
   }
-
  ```
+ 
  ### the data
   lastly, we need to tell the renderer what to do with the element. To do this, we add things to the `data` object. All types of elements have different parameters, so here's a quick rundown of all of them
   **for images**
