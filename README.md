@@ -1,5 +1,7 @@
 # .meme - the best file format for viewing memes
 
+### test it out [here](https://joshua-zou.github.io/.meme/)
+
 ## why .meme?
  - the text outputs of .meme are NOT images. They are actual fonts rendered with chromium! This means that no matter how much you zoom in, the text will still be fine!
  - .meme uses LESS storage space, because only parts that are moving or need image formats get them! So captions are pure text, and not images.
