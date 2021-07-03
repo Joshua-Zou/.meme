@@ -46,6 +46,43 @@ every element in the array is an object with these required parameters:
  (note, the coordinate system is like the ones you learned in math class, so )
  <img src="https://sites.google.com/site/gruendingmath6/_/rsrc/1468743449298/unit-1---patterns-and-equations/1-5---plotting-points-on-a-coordinate-grid/first%20quadrant%20grid.gif">
  - position (optional string) - 
- the default is ```bottom left``` and tells the render which corner of the element to use as a reference when positioning with the X, Y coordinates 
+ the default is `bottom left` and tells the render which corner of the element to use as a reference when positioning with the X, Y coordinates 
  valid options are `top left`, `top right`, `bottom left`, `bottom right`, and `center`
  - z_index (optional string) - this lets you force elements to appear ontop or below each otehr see [this](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index) for more details
+ - data (object) - this tells the renderer everything it needs to know about your element, and is different for every element type.
+ so now, our json file looks something like this: 
+ ```json
+{
+  "width": 500,
+  "height": 500,
+  "background": "color(skyblue)",
+  "elements": [
+    "type": "text",
+      "x": 0,
+      "y": 400,
+      "width": 500,
+      "height": 50,
+      "data": {
+      },
+      "position": "top left",
+      "z_index": 1
+   ]
+  }
+
+ ```
+ ### the data
+  lastly, we need to tell the renderer what to do with the element. To do this, we add things to the `data` object. All types of elements have different parameters, so here's a quick rundown of all of them
+  **for images**
+  - base64 (required) - this is the base64 encoded image
+  **for gifs**
+   - base64 (required) - this is the base64 encoded gif
+  **for text**
+   - text (required) - this is the text you want displayed
+   - mode (optional) - options: `innerText` and `innerHTML` with `innerHTML`, you can add `<br>`'s for line breaks, or anything. With `innerText`, your `<br>`'s will not do anything.
+   - font (optional) - default is `impact` and this parameter allows you to change the font.
+   - font_size (optional number) - font-size 
+   - font_weight (optional number) - how bold you would like your text.
+   - background (optional) - the image/color/gif behind the text. Uses the [.meme image syntax](#meme-image-syntax)   
+   - color (optional) - default is black, and this parameter changes the color of the text
+   - text_align (optional) - default is `center`, and allows you to change where the text is aligned. Other options are `left` and `right`
+   - overflow (optional) - default is `allowed`, but this parameter allows you to change if the text will get cut off or not with the option `none`
