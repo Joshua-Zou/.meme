@@ -9,7 +9,6 @@ function readFile() {
         var reader = new FileReader();
         reader.readAsText(file, "UTF-8");
         reader.onload = function (evt) {
-            console.log(evt.target.result);
             let json = JSON.parse(evt.target.result);
             let outputCanvas = document.getElementById("output");
             outputCanvas.style.width = json.width + "px";
